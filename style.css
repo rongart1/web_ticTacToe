@@ -1,0 +1,20 @@
+#gameBoard{
+    width: 600px;
+    height: 600px;
+}
+.table td {
+    text-align: center;
+  }
+  .tr td:first-child{
+    width:1%;
+    white-space:nowrap;
+  }
+  .tr td:last-child{
+    width:1%;
+    white-space:nowrap;
+  }
+  .gameButton{
+    width:200px;
+    height:200px;
+    font-size: 15dvh;
+  }
