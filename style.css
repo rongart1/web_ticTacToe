@@ -1,20 +1,30 @@
 #gameBoard{
-    width: 600px;
-    height: 600px;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
 }
-.table td {
-    text-align: center;
-  }
-  .tr td:first-child{
-    width:1%;
-    white-space:nowrap;
-  }
-  .tr td:last-child{
-    width:1%;
-    white-space:nowrap;
-  }
   .gameButton{
-    width:200px;
-    height:200px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width:30dvh;
+    height:30dvh;
     font-size: 15dvh;
+  }
+  #resetbtn{
+    margin-top: 5dvh;
+    margin-left: 5dvh;
+    width: 50dvh;
+    height: 20dvh;
+    font-size: 8dvh;
+  }
+  #rigthSide{
+    position: absolute;
+    margin: 5dvh;
+    width: 30dvh;
+    right: 10%;
+    top: 0%;
   }

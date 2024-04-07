@@ -1,7 +1,11 @@
 let player1Turn = true;
 let lastPlayer;
+let playerText = "player{0} turn";
+let whatPlayer= document.getElementById("whatPlayer");
+whatPlayer.innerHTML=(player1Turn,"x");
 function turn(clicked_id){
     let id =clicked_id;
+    
     if(player1Turn&&document.getElementById(id).innerHTML==""){
         document.getElementById(id).innerHTML="X";
     }
