@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="tictactoe.js"></script>
+    
     <table id="gameBoard">
         <tr>
             <td><button id="1" class="gameButton" onClick="turn(this.id)"></button></td>
@@ -27,8 +27,11 @@
     </table>
     <button id="resetbtn" onclick="reset()">reset</button>
     <div id="rigthSide">
-        <h1>h</h1>
+        <h1 id="who"></h1>
     </div>
-    
+
+    <h1 id="gameEnd"></h1>
+
+    <script src="tictactoe.js"></script>
 </body>
 </html>

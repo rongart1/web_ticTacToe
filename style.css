@@ -23,8 +23,20 @@
   }
   #rigthSide{
     position: absolute;
-    margin: 5dvh;
-    width: 30dvh;
+    width: 40dvh;
     right: 10%;
     top: 0%;
+  }
+
+  #gameEnd{
+    width: 100%;
+    text-align: center;
+    font-size: 20dvh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    margin: 0;
+    color: red;
   }
