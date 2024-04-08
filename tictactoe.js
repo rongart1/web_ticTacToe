@@ -6,28 +6,20 @@ let gameEndText = document.getElementById("gameEnd");
 let who= document.querySelector("#rigthSide #who");
 who.innerHTML=(playerXText);
 function turn(clicked_id){
-    let id =clicked_id;
-    if(player1Turn){
-        who.innerHTML=(playerOText);
-    }
-    else{
-        who.innerHTML=(playerXText);
-    }
+    let id =clicked_id; 
     if(player1Turn&&document.getElementById(id).innerHTML==""){
         document.getElementById(id).innerHTML="X";
-        
+        who.innerHTML=(playerOText);
+        player1Turn =!player1Turn; //switches the turn
+        lastPlayer="player1";
     }
     else if(document.getElementById(id).innerHTML==""){
         document.getElementById(id).innerHTML="O";
+        who.innerHTML=(playerXText);
+        player1Turn =!player1Turn; //switches the turn
+        lastPlayer="player2";
     }
-    if(player1Turn){
-        lastPlayer="player1"
-        
-    }
-    else{
-        lastPlayer="player2"
-    }
-    player1Turn =!player1Turn; //switches the turn
+    
 
     if(isWin()){
         let winText =lastPlayer+" won";
